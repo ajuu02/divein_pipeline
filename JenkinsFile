@@ -1,0 +1,10 @@
+pipeline {
+    agent { any { image 'MAVEN' } }
+    stages {
+        stage('RNS Regression') {
+            steps {
+                sh 'mvn install'
+            }
+        }
+    }
+}
