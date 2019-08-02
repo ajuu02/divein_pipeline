@@ -3,7 +3,7 @@ pipeline {
     stages {
         stage('RNS Regression') {
             steps {
-                sh 'mvn clean'
+                sh 'mvn --version'
             }
         }
     }
