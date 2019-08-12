@@ -3,7 +3,7 @@ pipeline {
     stages {
         stage('dev') {
             steps {
-                sh 'mvn --version'
+                echo 'Dev in Progress '
             }
             }
          stage('sanity test/JIT QA') {
@@ -18,28 +18,28 @@ pipeline {
             }
          stage('UAT Sanity Test') {
             steps {
-                echo 'mvn --version'
+                echo 'UAT Sanity Test'
             	}
             }
          stage('UAT Regression Test') {
             steps {
-                echo 'mvn --version'
+                echo 'UAT Regression Test'
             	}
             }
          stage('Deploy in staging') {
             steps {
-                echo 'mvn --version'
+                echo 'Deploy in staging'
             	}
             }
-         stage('Staging Regression and Performance Test') {
+         stage('Staging Regression Test') {
             steps {
-                echo 'mvn --version'
+                echo 'Staging Regression Test'
             	}
             }
           stage('Deploy to Production') {
             steps {
-                echo 'mvn --version'
-            };
+                echo 'Deploy to Production'
+            }
         }
     }
 }
